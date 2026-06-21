@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maré Alta — Passeios pelo litoral do Ceará</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Maré<span>Alta</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#passeios">Passeios</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#avaliacoes">Avaliações</a>
+    </nav>
+
+    <a href="#destinos" class="btn btn-coral btn-small nav-cta">Reservar</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-sky">
+    <span class="hero-star" style="top:18%; left:12%;"></span>
+    <span class="hero-star" style="top:28%; left:80%;"></span>
+    <span class="hero-star" style="top:12%; left:55%;"></span>
+    <span class="hero-star" style="top:40%; left:30%;"></span>
+    <div class="hero-sun"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow">Litoral do Ceará · saindo de Fortaleza</p>
+    <h1>A maré sobe duas<br>vezes por dia.<br>A vontade de viajar,<br>sempre.</h1>
+    <p class="hero-sub">Passeios guiados pelas dunas, lagoas e praias mais bonitas do Nordeste — sem roteiro engessado, sem pressa.</p>
+  </div>
+
+  <svg class="coastline" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+    <path class="coastline-back" d="M0,90 C220,150 460,30 720,70 C980,110 1200,30 1440,80 L1440,220 L0,220 Z"/>
+    <path class="coastline-front" d="M0,130 C200,190 520,90 760,130 C1020,170 1260,90 1440,140 L1440,220 L0,220 Z"/>
+  </svg>
+</section>
+
+<div class="search-wrap">
+  <form class="search-bar" onsubmit="return false;">
+    <div class="search-field">
+      <label for="dest">Para onde?</label>
+      <input type="text" id="dest" placeholder="Jericoacoara, Cumbuco...">
+    </div>
+    <span class="search-divider"></span>
+    <div class="search-field">
+      <label for="ida">Ida</label>
+      <input type="date" id="ida">
+    </div>
+    <span class="search-divider"></span>
+    <div class="search-field">
+      <label for="volta">Retorno</label>
+      <input type="date" id="volta">
+    </div>
+    <button type="submit" class="btn btn-coral search-btn">Buscar</button>
+  </form>
+</div>
+
+<section class="about" id="sobre">
+  <div class="about-text">
+    <p class="eyebrow">Quem somos</p>
+    <h2>Conhecemos o litoral pela maré, não pelo mapa</h2>
+    <p>A Maré Alta nasceu em Fortaleza, entre pescadores e guias que sabem a hora certa de sair — quando o vento enche a vela da jangada e a lagoa fica do tamanho certo para atravessar. Não vendemos pacotes fechados: montamos passeios pequenos, com gente local, no ritmo da costa.</p>
+    <p>Cada roteiro nasce de uma pergunta simples: o que essa praia tem hoje que não vai ter amanhã?</p>
+    <a href="#passeios" class="btn btn-coral">Saiba mais</a>
+  </div>
+
+  <div class="collage" aria-hidden="true">
+    <div class="collage-frame frame-1">
+      <svg viewBox="0 0 100 100"><rect width="100" height="100" class="cf-bg"/><path d="M0 70 L30 40 L55 60 L75 35 L100 55 L100 100 L0 100 Z" class="cf-shape"/><circle cx="78" cy="22" r="10" class="cf-sun"/></svg>
+    </div>
+    <div class="collage-frame frame-2">
+      <svg viewBox="0 0 100 100"><rect width="100" height="100" class="cf-bg"/><path d="M50 20 L50 65" class="cf-line"/><path d="M50 65 C30 75 20 85 15 92 M50 65 C70 75 80 85 85 92" class="cf-line"/><path d="M20 30 L50 20 L65 38 Z" class="cf-shape"/></svg>
+    </div>
+    <div class="collage-frame frame-3">
+      <svg viewBox="0 0 100 100"><rect width="100" height="100" class="cf-bg"/><path d="M10 85 Q30 70 45 82 T80 78" class="cf-line thick"/><circle cx="20" cy="78" r="2.5" class="cf-dot"/><circle cx="38" cy="83" r="2.5" class="cf-dot"/><circle cx="58" cy="76" r="2.5" class="cf-dot"/></svg>
+    </div>
+    <div class="collage-frame frame-4">
+      <svg viewBox="0 0 100 100"><rect width="100" height="100" class="cf-bg"/><path d="M15 40 Q25 30 35 40 Q45 30 55 40" class="cf-line"/><path d="M50 55 Q60 45 70 55 Q80 45 90 55" class="cf-line"/></svg>
+    </div>
+  </div>
+</section>
+
+<div class="tide-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 40" preserveAspectRatio="none">
+    <path d="M0,20 C120,5 240,35 360,20 C480,5 600,35 720,20 C840,5 960,35 1080,20 C1200,5 1320,35 1440,20" class="divider-line"/>
+  </svg>
+</div>
+
+<section class="tours" id="passeios">
+  <p class="eyebrow center">Nossos passeios</p>
+  <h2 class="center">Três jeitos de chegar na maré certa</h2>
+
+  <div class="tours-grid">
+
+    <article class="tour-card">
+      <div class="tour-icon">
+        <svg viewBox="0 0 64 64"><path d="M32 6 L32 46" class="icon-stroke"/><path d="M14 18 L32 6 L50 18 Z" class="icon-stroke icon-fill"/><path d="M10 46 C18 54 46 54 54 46 L52 38 L12 38 Z" class="icon-stroke icon-fill"/></svg>
+      </div>
+      <span class="tour-tag">Cumbuco</span>
+      <h3>Jangada ao entardecer</h3>
+      <p>Saída de jangada tradicional pela orla de Cumbuco, com parada para nadar na maré baixa e voltar com o sol caindo atrás das dunas.</p>
+      <span class="tour-price">a partir de R$ 180</span>
+      <a href="#contato" class="btn btn-coral btn-small">Saiba mais</a>
+    </article>
+
+    <article class="tour-card">
+      <div class="tour-icon">
+        <svg viewBox="0 0 64 64"><circle cx="20" cy="44" r="8" class="icon-stroke"/><circle cx="46" cy="44" r="8" class="icon-stroke"/><path d="M20 44 L28 22 L40 22 L46 44 M28 22 L20 14 L34 14" class="icon-stroke"/></svg>
+      </div>
+      <span class="tour-tag">Jericoacoara</span>
+      <h3>Buggy pelas dunas</h3>
+      <p>Travessia de buggy 4x4 entre Jeri e as lagoas vizinhas, com parada no mirante mais cobiçado da região na hora do pôr do sol.</p>
+      <span class="tour-price">a partir de R$ 320</span>
+      <a href="#contato" class="btn btn-coral btn-small">Saiba mais</a>
+    </article>
+
+    <article class="tour-card">
+      <div class="tour-icon">
+        <svg viewBox="0 0 64 64"><path d="M8 40 C8 26 20 16 32 16 C44 16 56 26 56 40" class="icon-stroke"/><path d="M6 40 L58 40" class="icon-stroke"/><path d="M16 40 L16 48 M28 40 L28 50 M40 40 L40 50 M52 40 L52 48" class="icon-stroke"/></svg>
+      </div>
+      <span class="tour-tag">Canoa Quebrada</span>
+      <h3>Lagoas escondidas</h3>
+      <p>Trilha leve até as lagoas de água doce atrás das falésias, longe do circuito principal, com guia que cresceu correndo essas dunas.</p>
+      <span class="tour-price">a partir de R$ 150</span>
+      <a href="#contato" class="btn btn-coral btn-small">Saiba mais</a>
+    </article>
+
+  </div>
+</section>
+
+<section class="destinos" id="destinos">
+  <p class="eyebrow center destinos-eyebrow">Para onde a maré te leva</p>
+  <h2 class="center destinos-title">Seis roteiros pelo litoral do Brasil</h2>
+
+  <div class="destinos-grid">
+
+    <article class="dest-card">
+      <div class="dest-art da-1"><svg viewBox="0 0 200 130"><rect width="200" height="130" class="da-bg"/><path d="M0 90 Q40 60 80 85 T160 80 T200 90 L200 130 L0 130 Z" class="da-water"/><circle cx="150" cy="35" r="16" class="da-sun"/><path d="M40 90 Q60 70 80 90" class="da-arc"/></svg></div>
+      <div class="dest-body">
+        <span class="dest-tag">Pernambuco</span>
+        <h3>Fernando de Noronha</h3>
+        <span class="dest-price">a partir de R$ 2.890</span>
+        <a href="#contato" class="btn btn-coral btn-small">Reservar</a>
+      </div>
+    </article>
+
+    <article class="dest-card">
+      <div class="dest-art da-2"><svg viewBox="0 0 200 130"><rect width="200" height="130" class="da-bg"/><path d="M0 110 L30 70 L55 95 L90 55 L120 90 L150 60 L180 95 L200 80 L200 130 L0 130 Z" class="da-water"/></svg></div>
+      <div class="dest-body">
+        <span class="dest-tag">Maranhão</span>
+        <h3>Lençóis Maranhenses</h3>
+        <span class="dest-price">a partir de R$ 1.750</span>
+        <a href="#contato" class="btn btn-coral btn-small">Reservar</a>
+      </div>
+    </article>
+
+    <article class="dest-card">
+      <div class="dest-art da-3"><svg viewBox="0 0 200 130"><rect width="200" height="130" class="da-bg"/><path d="M0 130 L0 55 L60 30 L75 55 L75 130 Z" class="da-cliff"/><path d="M90 130 L120 20 L150 130 Z" class="da-cliff" opacity="0.55"/><path d="M105 35 L101 130 M113 50 L110 130 M121 62 L119 130" class="da-fall-line thick"/><path d="M0 115 Q50 105 100 115 T200 110 L200 130 L0 130 Z" class="da-water"/></svg></div>
+      <div class="dest-body">
+        <span class="dest-tag">Bahia</span>
+        <h3>Chapada Diamantina</h3>
+        <span class="dest-price">a partir de R$ 1.390</span>
+        <a href="#contato" class="btn btn-coral btn-small">Reservar</a>
+      </div>
+    </article>
+
+    <article class="dest-card">
+      <div class="dest-art da-4"><svg viewBox="0 0 200 130"><rect width="200" height="130" class="da-bg"/><path d="M0 100 Q50 80 100 100 T200 95 L200 130 L0 130 Z" class="da-water"/><path d="M70 70 Q90 50 110 70 Q120 60 130 68" class="da-fish"/></svg></div>
+      <div class="dest-body">
+        <span class="dest-tag">Mato Grosso do Sul</span>
+        <h3>Bonito</h3>
+        <span class="dest-price">a partir de R$ 2.190</span>
+        <a href="#contato" class="btn btn-coral btn-small">Reservar</a>
+      </div>
+    </article>
+
+    <article class="dest-card">
+      <div class="dest-art da-5"><svg viewBox="0 0 200 130"><rect width="200" height="130" class="da-bg"/><path d="M30 130 L70 50 L100 90 L130 40 L170 130 Z" class="da-mountain"/><path d="M0 110 Q50 95 100 110 T200 105 L200 130 L0 130 Z" class="da-water"/></svg></div>
+      <div class="dest-body">
+        <span class="dest-tag">Rio de Janeiro</span>
+        <h3>Baía de Guanabara</h3>
+        <span class="dest-price">a partir de R$ 980</span>
+        <a href="#contato" class="btn btn-coral btn-small">Reservar</a>
+      </div>
+    </article>
+
+    <article class="dest-card">
+      <div class="dest-art da-6"><svg viewBox="0 0 200 130"><rect width="200" height="130" class="da-bg"/><path d="M0 35 L200 35 L200 45 L0 45 Z" class="da-cliff"/><path d="M25 45 L22 110 M50 45 L48 112 M75 45 L73 108 M100 45 L99 112 M125 45 L123 109 M150 45 L148 111 M175 45 L173 110" class="da-fall-line thick"/><path d="M0 130 Q50 115 100 125 T200 118 L200 130 Z" class="da-water"/><path d="M10 120 Q30 112 50 120 M120 122 Q140 114 160 122" class="da-arc"/></svg></div>
+      <div class="dest-body">
+        <span class="dest-tag">Paraná</span>
+        <h3>Foz do Iguaçu</h3>
+        <span class="dest-price">a partir de R$ 1.590</span>
+        <a href="#contato" class="btn btn-coral btn-small">Reservar</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="why">
+  <div class="why-inner">
+    <div class="why-item">
+      <span class="why-num">grupos pequenos</span>
+      <p>Até 8 pessoas por saída, para o guia poder mudar o roteiro na hora se a maré pedir.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-num">guias locais</span>
+      <p>Quem te leva é quem nasceu ali — não um roteiro decorado, e sim memória de família.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-num">sem pacote fechado</span>
+      <p>Você decide o ritmo. A gente decide só a hora da maré, porque essa não dá pra negociar.</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="avaliacoes">
+  <p class="eyebrow center">Avaliações dos clientes</p>
+  <h2 class="center">Quem foi, conta</h2>
+
+  <div class="testimonial-wrap">
+    <button class="t-arrow t-prev" id="tPrev" aria-label="Avaliação anterior">‹</button>
+
+    <div class="testimonial-track">
+
+      <blockquote class="testimonial active">
+        <p>"A gente chegou sem saber nada da maré e saiu sabendo a hora certa de atravessar a lagoa. O guia parou o passeio só pra gente ver o sol furar as dunas. Isso não tava em nenhum roteiro pronto."</p>
+        <div class="t-author">
+          <span class="t-avatar" style="--av:#1C7293;">MF</span>
+          <div>
+            <strong>Marina Falcão</strong>
+            <span>São Paulo, SP</span>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <p>"Fizemos o passeio de jangada em Cumbuco e foi o melhor entardecer da viagem inteira. Grupo pequeno, sem aquela sensação de excursão em massa. Recomendo de olhos fechados."</p>
+        <div class="t-author">
+          <span class="t-avatar" style="--av:#E8714A;">RT</span>
+          <div>
+            <strong>Rafael Tomé</strong>
+            <span>Belo Horizonte, MG</span>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <p>"O guia de Jericoacoara é literalmente da região — contou histórias da família dele enquanto atravessava as dunas de buggy. Detalhe que faz toda diferença numa viagem."</p>
+        <div class="t-author">
+          <span class="t-avatar" style="--av:#D9A441;">AL</span>
+          <div>
+            <strong>Aline Lopes</strong>
+            <span>Curitiba, PR</span>
+          </div>
+        </div>
+      </blockquote>
+
+    </div>
+
+    <button class="t-arrow t-next" id="tNext" aria-label="Próxima avaliação">›</button>
+  </div>
+
+  <div class="t-dots" id="tDots">
+    <span class="t-dot active"></span>
+    <span class="t-dot"></span>
+    <span class="t-dot"></span>
+  </div>
+</section>
+
+<footer id="contato">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="logo">Maré<span>Alta</span></a>
+      <p>Passeios pelo litoral do Ceará, saindo de Fortaleza.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <a href="#home">Home</a>
+      <a href="#passeios">Passeios</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#avaliacoes">Avaliações</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <a href="mailto:oi@marealta.com.br">oi@marealta.com.br</a>
+      <a href="tel:+5585999999999">(85) 99999-9999</a>
+      <div class="social-row">
+        <a href="#" class="social-icon" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M14 9 h3 V6 h-3 c-2 0-3 1-3 3 v2 H8 v3 h3 v7 h3 v-7 h2.5 l0.5-3 H14 V9z"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5" class="ig-ring"/><circle cx="17" cy="7" r="1.1" class="ig-dot"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="X">
+          <svg viewBox="0 0 24 24"><path d="M5 5 L19 19 M19 5 L5 19" class="x-mark"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h4>Assine a newsletter</h4>
+      <p>Roteiros novos e horários de maré, direto no seu e-mail.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="seu@email.com" aria-label="E-mail">
+        <button type="submit" class="btn btn-coral btn-small">Assinar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Maré Alta. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
